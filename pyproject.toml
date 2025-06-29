@@ -1,0 +1,26 @@
+[project]
+name = "sigmallm"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Camiel R. Verschoor",email = "camielverschoor@gmail.com"}
+]
+readme = "README.md"
+requires-python = "3.12.*"
+dependencies = [
+    "ipykernel (>=6.29.5,<7.0.0)",
+    "pandas (>=2.3.0,<3.0.0)",
+    "pydantic (>=2.11.7,<3.0.0)",
+    "outlines (>=1.0.2,<2.0.0)",
+    "ollama (>=0.5.1,<0.6.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+notebook = "^7.4.3"
+ipykernel = "^6.29.5"
+
